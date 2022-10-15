@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.billboard {
+  background-color: #046684;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+;
+}
+.poster {
+    margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #a16468;
+  border-radius: 20px;
+  color: #2f4744;
+  font-weight: 400;
+
+}
+
+.poster:hover{
+    background-color:#d4b5a9;
+    box-shadow: -6px 6px 14px #a16468;
+}
+.titleJapanese {
+    margin-top:0 ;
+    font-size: 1.2em;
+}
+.titleSpanish {
+
+    font-size: 1.3em;
+}
+.image {
+  width: 250px;
+  height: 350px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 20px;
+}
+.timer::before {
+    content: 'Duration: ';
+    font-weight: 00;
+}
+.rate::before {
+    content: 'Score: ';
+    font-weight: 500;
+}
