@@ -2,6 +2,10 @@ const billboard$$ = document.createElement('div');
 billboard$$.className = 'billboard';
 document.body.appendChild(billboard$$);
 
+const h1$$ = document.createElement('h1');
+h1$$.textContent = '- Studio Ghibli Films Billboard -';
+h1$$.className = 'h1'
+document.body.insertBefore(h1$$, billboard$$)
 function pintar (films){
     console.log(films);
 
